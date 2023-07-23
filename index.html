@@ -5,40 +5,40 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIACWAQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAV1JREFUeJydk88rhEEYx2fm1a6DPZCbxEFOyl/gwEUp5bSKuwtH7YWTq6QQ7sqRkxKlXP24rBw2odjEQQqRX43PzD5v+7Z2M7z1aZ73eZ/vd+aZd0YpHqvUChzCOdzAHVj4kPcL2LdazzF2qsqH5JIIrmEaJiALoxLPwzF8witsWmPaywZaj4jBxg/38iSGuh448bVan9koaow/DkpyqpZBwqgB8lK/GieHZAUDvxn4+ijqlf25jw1y3sCYliCDdNpQf2m9tGSwDqch4kQrR97AZjKaoEA/s/8weHJ/oJXgjTGo/4SBOxtbzmCG4AWag8VR1E39Oww7pz0osoH1wQZab6Nx5yGl5PQV/iAek5b74l6+4IpEKkA8Se0jqx1n1LGB9WfcmK6qIqXqEPbLZXsgzlYWHIhJEVxvy7AoN3THr06pZ4RrTNJRbVlNsOAvR8ko5hZ2yefY9bZabX0DEkfGwmYLFIEAAAAASUVORK5CYII=">
       <title>
-         <!--{opt.siteName}-->
+         {{opt.siteName}}
       </title>
       <style>
       </style>
-      <!--{opt.codeBeforHead}-->
+      {{opt.codeBeforHead}}
    </head>
    <body>
       <div class="site">
          <header id="masthead" class="site-header" role="banner">
             <div class="io-title-description">
-               <a href="/" title="<!--{opt.siteName}-->" rel="home">
-                  <!--{opt.siteName}-->
+               <a href="/" title="{{opt.siteName}}" rel="home">
+                  {{opt.siteName}}
                </a>
                <br> 
                <a class="site-description">
-                  <!--{opt.siteDescription}-->
+                  {{opt.siteDescription}}
                </a>
             </div>
-            <!--{widgetMenu.html}-->
+            {{widgetMenu.html}}
             <!-- #site-navigation --> 
             <div class="clear"></div>
          </header>
          <!-- #masthead --> 
          <div id="main" class="wrapper">
             <div id="primary" class="site-content">
-               <!--{articleList.html}-->
-               <!--{articleSingle.html}-->
+               {{articleList.html}}
+               {{articleSingle.html}}
                <!-- #上面俩,二选一 --> 
             </div>
             <!-- #primary --> 
             <div id="secondary" class="widget-area" role="complementary">
-               <!--{widgetRecently.html}-->
-               <!--{widgetCategory.html}-->
-               <!--{widgetTags.html}-->
+               {{widgetRecently.html}}
+               {{widgetCategory.html}}
+               {{widgetTags.html}}
                <aside id="meta-2" class="widget widget_meta">
                   <p class="widget-title">Links</p>
                   <ul>
@@ -51,12 +51,12 @@
          <!-- #main .wrapper --> 
          <!-- #colophon --> 
          <div class="site-wordpress">
-            <!--{opt.copyRight}-->
+            {{opt.copyRight}}
          </div>
          <!-- .site-info --> 
          <div class="clear"></div>
       </div>
       <!-- #page --> 
-      <!--{opt.codeBeforBody}-->
+      {{opt.codeBeforBody}}
    </body>
 </html>
